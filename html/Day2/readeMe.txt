@@ -1,0 +1,9 @@
+Attributes of table
+
+1.Border (table):
+    To give border to the entire table and each cell.
+    eg:<table border="1">
+
+2.Cellspacing (table):
+    To provide the space b/w the cell.
+    eg: <table border="1" Cellspacing="15px">

@@ -1,0 +1,25 @@
+.content-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    padding: 20px;
+    margin: 20px;
+}
+.border-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.border{
+    width: 200px;
+    height: 200px;
+    border-top: 2px solid yellow;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid red;
+    border-left: 2px solid green;
+    padding: 20px;
+    margin: 20px;
+}

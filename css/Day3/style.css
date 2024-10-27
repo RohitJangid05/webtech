@@ -1,0 +1,44 @@
+h1{
+    display: inline-block;
+    font-size: 46px;
+    font-style: italic;
+}
+h2{
+    display: inline-block;
+    text-decoration: underline;
+}
+h3{
+    text-align: center;
+}
+.red{
+    width: 300px;
+    height: 300px;
+    background-color:cadetblue;
+    display: inline-block;
+    margin-right: 10px;
+}
+.blue{
+    width: 300px;
+    height: 300px;
+    background-color:chocolate;
+    display: inline-block;
+}
+div:hover{
+box-shadow: 5px 5px 5px gray;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 40px 80px;
+    border: 2px solid black;
+    transition-property: background-color,border-radius,rotate;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.box:hover{
+    /* transform: translate(150px); */
+    border-radius: 50%;
+    transform: rotate(165deg);
+    background-color: red;
+}

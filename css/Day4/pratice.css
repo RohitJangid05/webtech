@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300;400;700&family=Noto+Sans+Arabic:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 220px;
+    padding-top: 25px;
+    background-image: url('bg-img.avif');
+    background-repeat: no-repeat;
+    background-size: 100%, 60%;
+    color: white;
+}
+
+.box-top {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-top>h2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.box-top ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.box-bottom {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-bottom>h1 {
+    font-size: 85px;
+    font-family: "Courgette", cursive;
+    font-weight: 900;
+}
+
+.box-bottom>p {
+    font-size: 45px;
+    text-wrap: nowrap;
+}
+
+.container {
+    width: 52vw;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60vw;
+
+}
+
+.input input {
+    border: none;
+    outline: none;
+    height: 100%;
+    margin-left: 10px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+select {
+    border: none;
+    outline: none;
+    width: 20%;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+#search {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.448);
+    border-left: 2px solid #0000006d;
+    padding-left: 15px;
+}
+
+#location {
+    font-size: 25px;
+    color: tomato;
+    margin-right: 8px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 45px 180px;
+}
+
+.hero-section {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+}
+
+.hero-section>.card {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px 20px 10px 10px;
+    border: 2px solid rgba(128, 128, 128, 0.284);
+    overflow: hidden;
+    transition: all 0.1s linear;
+}
+
+.hero-section>.card:hover {
+    transform: scale(1.03);
+}
+
+.hero-section>.card>img {
+
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hero-section>.card>.text {
+    padding: 5px 25px;
+    color: rgb(64, 64, 64);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-section>.card>.text>h2 {
+    font-weight: 300;
+}
+.section-top{
+    height: 80%;
+}
+.section-top>h1 {
+    font-size: 35px;
+}
+
+.section-top>div {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-card-holder {
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.section-card-holder>.section-card {
+    width: 350px;
+    height: 350px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-image: url("bg-img.avif");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section-card>h2 {
+    font-size: 18px;
+}
+
+.section-mid{
+    height: 60%;
+}

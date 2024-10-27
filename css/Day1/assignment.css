@@ -1,0 +1,38 @@
+
+button:hover {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+input:focus {
+    outline:none;
+    border: 2px solid blue; 
+}
+
+li:nth-child(2) {
+    color: red; 
+}
+
+li:first-child {
+    font-weight: bold; 
+}
+
+
+h1::before {
+    content: "✓ ";
+    color: green;
+}
+
+p::first-letter {
+    font-size: 2em; 
+    color: purple;
+}
+
+button::after {
+    content: " 👍"; 
+}
+
+p::selection {
+    background: yellow; 
+    color: black;
+}

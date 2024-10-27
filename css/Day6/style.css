@@ -1,0 +1,23 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading: red;
+    --sub-heading: grey;
+}
+
+h1,
+h5 {
+    color: var(--heading);
+}
+
+h2 {
+    color: var(--sub-heading);
+}
+
+p {
+    color: var(--heading);
+}

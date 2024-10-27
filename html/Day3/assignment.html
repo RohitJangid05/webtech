@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment</title>
+</head>
+<style>
+    * {
+        font-family: sans-serif;
+    }
+</style>
+
+<body>
+    <form action="">
+        <h1>Scholarship Application Form</h1>
+        <h3>Application Deadline - April 18, 2023</h3>
+        <input type="radio" id="readme" name="read_instruction" value="yes"><label for="readme">I read and understand <a
+                href="">instructions.</a></label>
+
+        <h2>I. Personal Data</h2>
+        <p>Tell us about yourself</p>
+        <label for="FullName">Full Name</label>
+        <input type="text" placeholder="First Name" name="fname" id="FullName" required>
+        <input type="text" placeholder="Last Name" name="lname" id="FullName" required><br><br>
+        <label for="dob">Birthdate</label>
+        <select name="month" id="dob" required>
+            <option value="">--Month--</option>
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="Mar">March</option>
+            <option value="Apr">April</option>
+            <option value="May">May</option>
+            <option value="Jun">June</option>
+            <option value="Jul">July</option>
+            <option value="Aug">August</option>
+            <option value="Sep">September</option>
+            <option value="Oct">October</option>
+            <option value="Nov">November</option>
+            <option value="Dec">December</option>
+        </select>
+        <select name="day" id="dob" required>
+            <option value="">--Day--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select name="year" id="dob" required>
+            <option value="">--Year--</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+            <option value="2033">2033</option>
+            <option value="2034">2034</option>
+            <option value="2035">2035</option>
+            <option value="2036">2036</option>
+            <option value="2037">2037</option>
+            <option value="2038">2038</option>
+            <option value="2039">2039</option>
+            <option value="2040">2040</option>
+            <option value="2041">2041</option>
+            <option value="2042">2042</option>
+            <option value="2043">2043</option>
+            <option value="2044">2044</option>
+            <option value="2045">2045</option>
+            <option value="2046">2046</option>
+            <option value="2047">2047</option>
+            <option value="2048">2048</option>
+            <option value="2049">2049</option>
+            <option value="2050">2050</option>
+        </select><br><br>
+        <label for="mobile_no">Mobile No</label>
+        <input type="number" id="mobile_number" placeholder="(000) 000-000" name="mobile"><br><br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="ex: sample@gmail.com" name="email"><br><br>
+        <label for="address">Address</label><br>
+        <input type="text" id="address" placeholder="Street address" name="street1"><br><br>
+        <input type="text" id="address" placeholder="street 2 address" name="street2"><br><br>
+        <input type="text" id="address" placeholder="City" name="city">
+        <input type="text" id="address" placeholder="State" name="state"><br><br>
+        <input type="number" id="address" placeholder="Zip-Code">
+
+        <h2>Optional Informations </h2>
+        <span>Gender</span>
+        <input type="radio" id="male" name="gender"><label for="male">Male</label>
+        <input type="radio" id="female" name="gender"><label for="female">Female</label><br><br>
+        <span>Are you US citizen?</span>
+        <input type="radio" id="yes" name="citizen"><label for="yes">Yes</label>
+        <input type="radio" id="no" name="citizen"><label for="no">No</label>
+
+        <p>Please check your veteran status.</p>
+        <input type="checkbox" name="veteran" id="veteran">
+        <label for="veteran">Veteran</label><br>
+        <input type="checkbox" name="child" id="child">
+        <label for="child">Child</label><br>
+        <input type="checkbox" name="grandChild" id="grandchild">
+        <label for="grandchild">Grandchild</label><br>
+        <input type="checkbox" name="spouse" id="spouse">
+        <label for="spouse">Spouse</label><br>
+        <input type="checkbox" name="none" id="none">
+        <label for="none">None of the above</label>
+
+        <p>Please check your status at the time of application:</p>
+
+        <input type="radio" name="status" id="graduate_2027" value="graduate_2027">
+        <label for="graduate_2027">I will graduate in May 2027</label><br>
+        <input type="radio" name="status" id="incoming_freshman" value="incoming_freshman">
+        <label for="incoming_freshman">I will be an incoming freshman graduating high school prior to 2023</label><br>
+        <input type="radio" name="status" id="less_32_credits" value="less_32_credits">
+        <label for="less_32_credits">I have attended college but have less than 32 college credit hours</label><br>
+        <input type="radio" name="status" id="more_32_credits" value="more_32_credits">
+        <label for="more_32_credits">I have attended college but have at least 32 or more college credit
+            hours</label><br>
+        <input type="radio" name="status" id="ged_no_credits" value="ged_no_credits">
+        <label for="ged_no_credits">I am a GED graduate with no college credit hours</label>
+
+        <p>Are you a first generation college student?</p>
+
+        <input type="radio" name="first_generation" id="first_gen" value="first_gen">
+        <label for="first_gen">Yes, I am the first among my parents or grandparents to attend college.</label><br>
+        <input type="radio" name="first_generation" id="no_first_gen" value="no_first_gen">
+        <label for="no_first_gen">No, either my parents or grandparents have attended college.</label><br><br>
+
+        <label for="degree">Major area of study</label>
+        <select name="degree" id="degree">
+            <option value="">--Please select--</option>
+            <option value="computer_science">Computer Science</option>
+            <option value="information_technology">Information Technology</option>
+            <option value="business_administration">Business Administration</option>
+            <option value="engineering">Engineering</option>
+            <option value="biology">Biology</option>
+            <option value="psychology">Psychology</option>
+            <option value="economics">Economics</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="arts">Arts</option>
+            <option value="education">Education</option>
+            <option value="health_sciences">Health Sciences</option>
+            <option value="law">Law</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="environmental_science">Environmental Science</option>
+            <option value="social_sciences">Social Sciences</option>
+            <option value="history">History</option>
+            <option value="political_science">Political Science</option>
+            <option value="marketing">Marketing</option>
+            <option value="finance">Finance</option>
+            <option value="communications">Communications</option>
+            <option value="nursing">Nursing</option>
+            <option value="architecture">Architecture</option>
+            <option value="graphic_design">Graphic Design</option>
+            <option value="philosophy">Philosophy</option>
+            <option value="literature">Literature</option>
+            <option value="anthropology">Anthropology</option>
+        </select><br><br>
+
+        <label for="carrer_obj">What is your career objective?</label><br>
+        <textarea name="career_objective" id="carrer_obj" style="width: 400px; height: 150px;"></textarea>
+
+        <p>Fine Arts Interest:</p>
+
+        <input type="radio" name="fine_arts_interest" id="not_interested" value="not_interested">
+        <label for="not_interested">Not Interested</label><br>
+
+        <input type="radio" name="fine_arts_interest" id="chorus" value="chorus">
+        <label for="chorus">Chorus</label><br>
+
+        <input type="radio" name="fine_arts_interest" id="performing_arts" value="performing_arts">
+        <label for="performing_arts">Performing Arts (Theatre)</label><br>
+
+        <input type="radio" name="fine_arts_interest" id="guitar_ensemble" value="guitar_ensemble">
+        <label for="guitar_ensemble">Guitar Ensemble</label><br>
+
+        <input type="radio" name="fine_arts_interest" id="jazz_band" value="jazz_band">
+        <label for="jazz_band">Jazz Band</label><br>
+
+        <input type="radio" name="fine_arts_interest" id="graphic_art" value="graphic_art">
+        <label for="graphic_art">Graphic Art/Photo/Painting/Drawing</label><br><br>
+
+        <p>Have you submitted an application for admission?</p>
+
+        <input type="radio" name="application_submitted" id="yes_application" value="yes">
+        <label for="yes_application">Yes</label><br>
+
+        <input type="radio" name="application_submitted" id="no_application" value="no">
+        <label for="no_application">No</label>
+
+        <h2>II. High School Information</h2>
+        <p>Are you or will you be a May 2023 high school graduate?</p>
+        <input type="radio" name="high_school" id="yes"><label for="yes">Yes</label>
+        <input type="radio" name="high_school" id="No"><label for="yes">No</label>
+
+        <p>Would you like to be considered for a summer award?</p>
+        <input type="radio" name="award" id="yes"><label for="yes">Yes</label>
+        <input type="radio" name="award" id="No"><label for="yes">No</label><br><br>
+
+        <label for="high_school">High School Attended</label><br>
+        <input type="text" id="high_school" name="high_school"><br><br>
+        <label for="GED">Year of High School Graduation or GED</label><br>
+        <input type="text" id="GED" name="GED"><br><br>
+        <label for="GPA">Most recent cumulative GPA</label><br>
+        <input type="text" id="GPA" name="GPA"><br><br>
+        <label for="activities">High School activities, community activities, volunteer work, honors, offices
+            held</label><br>
+        <textarea name="activities" id="activities" style="width: 400px; height: 150px;"></textarea>
+
+        <h2>III. ACT Information</h2>
+
+        <label for="year_you_took">Year you took the ACT</label><br>
+        <input type="text" id="year_you_took" name="year_you_took"><br><br>
+        <label for="overall_score">ACT composite (overall) score?</label><br>
+        <input type="text" id="overall_score" name="overall_score"><br><br>
+
+        <h2>IV. For Transfer Students Only</h2>
+        <label for="transfer_GPA">Most recent college attended and cumulative transfer GPA</label><br>
+        <textarea name="transfer_GPA" id="transfer_GPA" style="width: 400px; height: 150px;"></textarea>
+
+        <h2>Most recent college attended and cumulative transfer GPA</h2>
+        <label for="credit">Approximate credit hours completed by May 2023</label>
+        <input type="text" id="credit" name="credit"><br><br>
+        <label for="current_GPA">Current GPA</label>
+        <input type="text" id="current_GPA" name="current_GPA"><br><br>
+
+        <label for="school_activities">School activities, honors, offices held, etc.</label><br>
+        <textarea name="school_activities" id="school_activities" style="width: 400px; height: 150px;"></textarea>
+
+        <h2>VI. Extras</h2>
+
+        <p>Have you ever received a scholarship at (School Name)?</p>
+
+        <input type="radio" id="scholarship_yes" name="scholarship" value="yes">
+        <label for="scholarship_yes">Yes</label>
+        <input type="radio" id="scholarship_no" name="scholarship" value="no">
+        <label for="scholarship_no">No</label>
+
+        <p>Do you plan to complete your two-year degree with (School Name)?</p>
+
+        <input type="radio" id="two_year_yes" name="two_year" value="yes">
+        <label for="two_year_yes">Yes</label>
+        <input type="radio" id="two_year_no" name="two_year" value="no">
+        <label for="two_year_no">No</label>
+
+        <p>Do you plan to transfer to another college and complete a 4-year degree?</p>
+        <input type="radio" id="transfer_yes" name="transfer" value="yes">
+        <label for="transfer_yes">Yes</label>
+        <input type="radio" id="transfer_no" name="transfer" value="no">
+        <label for="transfer_no">No</label><br><br>
+
+        <p>Do you have a disability?</p>
+        <input type="radio" id="disability_yes" name="disability" value="yes">
+        <label for="disability_yes">Yes</label>
+        <input type="radio" id="disability_no" name="disability" value="no">
+        <label for="disability_no">No</label><br><br>
+
+        <p>Are you a GED recipient?</p>
+        <input type="radio" id="ged_yes" name="ged" value="yes">
+        <label for="ged_yes">Yes</label>
+        <input type="radio" id="ged_no" name="ged" value="no">
+        <label for="ged_no">No</label><br><br>
+
+        <p>Are you interested and willing to major in Science, Technology, Engineering (Pre-Engineering) or Math?</p>
+        <input type="radio" id="stem_yes" name="stem" value="yes">
+        <label for="stem_yes">Yes</label>
+        <input type="radio" id="stem_no" name="stem" value="no">
+        <label for="stem_no">No</label><br><br>
+
+        <p>Were you born outside the USA?</p>
+        <input type="radio" id="born_outside_yes" name="born_outside" value="yes">
+        <label for="born_outside_yes">Yes</label>
+        <input type="radio" id="born_outside_no" name="born_outside" value="no">
+        <label for="born_outside_no">No</label><br><br>
+
+        <p>Were your parents born outside the USA?</p>
+        <input type="radio" id="parents_born_outside_yes" name="parents_born_outside" value="yes">
+        <label for="parents_born_outside_yes">Yes</label>
+        <input type="radio" id="parents_born_outside_no" name="parents_born_outside" value="no">
+        <label for="parents_born_outside_no">No</label><br><br>
+
+        <p>In addition to a scholarship, would you like to be considered for co-op opportunities (working part-time for
+            tuition support with a company relevant to your major)?</p>
+        <input type="radio" id="coop_yes" name="coop" value="yes">
+        <label for="coop_yes">Yes</label>
+        <input type="radio" id="coop_no" name="coop" value="no">
+        <label for="coop_no">No</label><br><br>
+
+        <p>Will you be working while attending (School Name)?</p>
+        <input type="radio" id="working_yes" name="working" value="yes">
+        <label for="working_yes">Yes</label>
+        <input type="radio" id="working_no" name="working" value="no">
+        <label for="working_no">No</label><br><br>
+
+        <p>Please check if you or any of your family work for any of the following organizations:</p>
+
+        <input type="checkbox" id="organization_1" name="cook_petrol_control">
+        <label for="organization_1">cook petrol control</label>
+
+        <input type="checkbox" id="organization_2" name="RBC">
+        <label for="organization_2">RBC</label>
+
+        <input type="checkbox" id="organization_3" name="3M">
+        <label for="organization_3">3M</label><br>
+
+        <input type="checkbox" id="organization_4" name="Bunge">
+        <label for="organization_4">Bunge</label>
+
+        <input type="checkbox" id="organization_5" name="BP">
+        <label for="organization_5">BP </label>
+
+        <h2>VII. Essay</h2>
+
+        <label for="eassy">Essay</label><br>
+        <textarea name="eassy" id="eassy" style="width: 400px; height: 150px;"></textarea>
+
+        <h2>VIII. Applicant's E-Signature</h2>
+        <label for="signature">Signature</label>
+        <input type="file" id="signature" name="signature">
+
+        <br><br>
+        <button>Print</button>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
