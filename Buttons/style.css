@@ -21,19 +21,22 @@ body {
     height: 100%;
     padding: 50px;
 }
-.container>div{
+
+.container>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-a{
+
+a {
     color: #000;
     text-decoration: none;
     position: relative;
     z-index: 10;
 }
+
 button {
     position: relative;
     overflow: hidden;
@@ -46,7 +49,7 @@ button {
 
 /* btn1  */
 
-.btn1::after{
+.btn1::after {
     position: absolute;
     content: "";
     left: 0%;
@@ -57,17 +60,19 @@ button {
     border-radius: 50%;
     transition: all 0.3s linear;
 }
-.btn1:hover a{
+
+.btn1:hover a {
     color: white;
 }
-.btn1:hover::after{
+
+.btn1:hover::after {
     border-radius: 0%;
     top: 0;
 }
 
 /* btn 2 */
 
-.btn2::after{
+.btn2::after {
     position: absolute;
     content: "";
     left: 0%;
@@ -78,17 +83,19 @@ button {
     border-radius: 50%;
     transition: all 0.3s linear;
 }
-.btn2:hover a{
+
+.btn2:hover a {
     color: white;
 }
-.btn2:hover::after{
+
+.btn2:hover::after {
     border-radius: 0%;
     bottom: 0;
 }
 
 /* btn 3 */
 
-.btn3::after{
+.btn3::after {
     position: absolute;
     content: "";
     right: 100%;
@@ -98,16 +105,18 @@ button {
     background: #000;
     transition: all 0.7s linear;
 }
-.btn3:hover a{
+
+.btn3:hover a {
     color: white;
 }
-.btn3:hover::after{
+
+.btn3:hover::after {
     right: 0;
 }
 
 /* btn 4 */
 
-.btn4::after{
+.btn4::after {
     position: absolute;
     content: "";
     left: 100%;
@@ -117,9 +126,22 @@ button {
     background: #000;
     transition: all 0.7s linear;
 }
-.btn4:hover a{
+
+.btn4:hover a {
     color: white;
 }
-.btn4:hover::after{
+
+.btn4:hover::after {
     left: 0;
+}
+
+
+/* btn 5 */
+
+.btn5{
+    transition: all 0.4s linear;
+}
+.btn5:hover {
+    background: #3e3e3e;
+    color: white;
 }
