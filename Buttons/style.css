@@ -145,3 +145,63 @@ button {
     background: #3e3e3e;
     color: white;
 }
+
+
+/* brn 6  */
+
+ /* Base style for btn6 */
+.btn6 {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s;
+    background: white;
+    color: black;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Expanding circle effect */
+.btn6::before {
+    position: absolute;
+    transition: 0.3s;
+    content: '';
+    top: 50%;
+    left: 50%;
+    background: #1ea664;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.btn6:hover {
+    color: transparent;
+    background: #000;
+}
+
+/* Circle expands on hover */
+.btn6:hover::before {
+    background: #3e3e3e;
+    width: 11em;
+    height: 11em;
+}
+
+/* Display hover text */
+.btn6::after {
+    content: attr(data-hover); /* Uses data-hover attribute */
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s;
+    white-space: nowrap; /* Prevents line break */
+}
+
+.btn6:hover::after {
+    opacity: 1; /* Show on hover */
+}
